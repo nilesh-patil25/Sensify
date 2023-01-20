@@ -30,6 +30,7 @@ import YourOrders from "./components/YourOrders.jsx";
 import YetToDispatch from "./components/YetToDispatch.jsx";
 
 import { HashRouter } from "react-router-dom";
+import Dashboard from "./pages/Dashboard.jsx";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
 <Navbar />
       <Routes>
       <Route index exact path="/" element={<HomePage />} />
+      <Route index exact path="Dashboard" element={<Dashboard />} />
       {/* <Route index exact path="/about" element={<About />} />
       <Route index exact path="/mission" element={<Mission />} />
       <Route index exact path="/tutorial" element={<Tutorials />} />

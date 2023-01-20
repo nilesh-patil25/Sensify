@@ -32,9 +32,9 @@ const UserProfile = () => {
             }
 
             const res = await axios.post("https://5qrg7as0r4.execute-api.us-east-1.amazonaws.com/isticks/get-user-profile",obj)
-               console.log(res.data);
-            setUserData(res.data?.userProfile);
-           
+               //console.log(res?.data);
+               setUserData(res.data.userProfile);
+               
       }
 
       const handleClickout=()=>{

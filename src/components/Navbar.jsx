@@ -103,6 +103,8 @@ const Nav = (props) => {
             </span>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to="/dashboard"> Dashboard </Link></li>
                 <li class="nav-item">
                   <a onClick={(e)=>{navigate('/')}} class="nav-link" aria-current="page" href="#about">
                     About

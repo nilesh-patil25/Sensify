@@ -44,7 +44,7 @@ function MainCheckOut() {
     <Wrapper>
       <Navbar />
       <CheckoutNav />
-
+      
     <div className="row container testing">
       <section  className='col-md-8' >
       <div class="col">

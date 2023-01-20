@@ -8,9 +8,9 @@ const stripePromise = loadStripe("pk_test_51LOAgCLocYDVe0iYLVV1VLadghurJPIunOlYl
 var num=0;
 
 const App = (props) => {
- const name = props?.data.name
- const address = props?.data.address1
-
+ const name = props.data.name  
+ const address = props.data.address1 
+ 
   num=props.id;
    console.log("Inside App.jsx: ",num);  
 
@@ -25,6 +25,7 @@ const App = (props) => {
   );
 };
 function test(){
+
   return num;
 }
 export default App;

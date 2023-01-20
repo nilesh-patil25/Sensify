@@ -10,9 +10,6 @@ import { useState } from "react";
 import LoadingSpinner from "../LoadingSpinner";
 import { Navigate,useNavigate } from "react-router-dom";
 
-
-
-
 const CheckoutForm=(props)=> {
 
   const navigate =useNavigate()
@@ -119,7 +116,7 @@ const CheckoutForm=(props)=> {
 
 export default function InjectedCheckoutForm(props) {
   // const [data,setData] = useState(props?.myname);
-  console.log(props?.myname);
+  console.log(props.myname);
   var name = props.name
   var address = props.address
   // setData(props.myname)

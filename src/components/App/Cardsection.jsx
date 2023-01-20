@@ -1,6 +1,6 @@
 import React from "react";
 import { CardElement } from "@stripe/react-stripe-js";
-import { PaymentFormContainer,FormContainer } from "./payment-form-styles";
+import { PaymentFormContainer,FormContainer } from "./payment.form.styles";
 
 const CARD_ELEMENT_OPTIONS = {
   style: {

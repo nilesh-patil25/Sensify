@@ -23,6 +23,9 @@ const Payment = (props) => {
 
   const location = useLocation();
 
+  console.log(location.state);
+  console.log(location.state);
+
   const { cart,total,increase2,amount3} = useGlobalContext();
   const navigate = useNavigate();
   
@@ -47,7 +50,7 @@ const Payment = (props) => {
   }
 
   const data = {
-    name:location.state.name,
+    name:location.state.nametoString(),
     address1:location.state.address,
   }
   const handleClickbtn = () => {
@@ -130,7 +133,7 @@ const Payment = (props) => {
                 </div>
               </div>
             <div className="test" onClick={handlesub}>
-              <App  id={location.state.responses["Message"].replace( /^\D+/g, '')} data ={data}/>
+              <App  id={location.state.responses["Message"].replace( /^\D+/g, '')} data={data}/>
               </div>
             </div>
 
