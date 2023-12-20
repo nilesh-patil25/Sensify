@@ -16,8 +16,10 @@ const SubCheckout = () => {
     navigate('/Shipping');
   };
   const { amount} = useGlobalContext();
-  return (
-    <Wrapper>
+    return (
+      
+        <Wrapper>
+   {/*<div>cart,items</div>*/}
       <section class="">
         <div class="">
           <div class="">
